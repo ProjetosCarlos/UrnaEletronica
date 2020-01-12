@@ -35,6 +35,11 @@ public class TeladeLogIn extends javax.swing.JFrame {
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/entrar botão.png"))); // NOI18N
         jButton1.setMargin(new java.awt.Insets(0, 0, 0, 0));
         jButton1.setMaximumSize(new java.awt.Dimension(0, 21));
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -81,6 +86,10 @@ public class TeladeLogIn extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Dados não Conferem");//mensagem de erro apos os dados de logs terem sido digitado errado.
         }   
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        new telaAdministrador().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1MouseClicked
 
     
     public static void main(String args[]) {
