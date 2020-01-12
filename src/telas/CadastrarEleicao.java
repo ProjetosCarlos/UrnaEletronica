@@ -24,7 +24,7 @@ public class CadastrarEleicao extends javax.swing.JFrame {
         lbAddCargo = new javax.swing.JLabel();
         lbCriarEleicao = new javax.swing.JLabel();
         lbCargosCadastrados = new javax.swing.JLabel();
-        lbAdicionarCargo1 = new javax.swing.JLabel();
+        lbCriarEleicaoNome = new javax.swing.JLabel();
         lbAdicionarCargo = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -59,7 +59,7 @@ public class CadastrarEleicao extends javax.swing.JFrame {
         lbEnderecoTela.setForeground(new java.awt.Color(255, 255, 255));
         lbEnderecoTela.setText("ADMINISTRADOR > CRIAR ELEIÇÃO");
         getContentPane().add(lbEnderecoTela);
-        lbEnderecoTela.setBounds(10, 10, 210, 12);
+        lbEnderecoTela.setBounds(10, 10, 210, 15);
 
         lbNomedaeleicao.setFont(new java.awt.Font("Montserrat SemiBold", 0, 24)); // NOI18N
         lbNomedaeleicao.setForeground(new java.awt.Color(255, 255, 255));
@@ -91,18 +91,18 @@ public class CadastrarEleicao extends javax.swing.JFrame {
         getContentPane().add(lbVoltar);
         lbVoltar.setBounds(790, 20, 38, 39);
 
-        lbAddCargo.setIcon(new javax.swing.ImageIcon("F:\\Projeto Urna Eletronica\\URNA CODIGO JAVA\\UrnaEletronica\\src\\icones\\mais.png")); // NOI18N
+        lbAddCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/mais.png"))); // NOI18N
         getContentPane().add(lbAddCargo);
         lbAddCargo.setBounds(20, 450, 40, 40);
 
-        lbCriarEleicao.setIcon(new javax.swing.ImageIcon("F:\\Projeto Urna Eletronica\\URNA CODIGO JAVA\\UrnaEletronica\\src\\icones\\mais.png")); // NOI18N
+        lbCriarEleicao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/mais.png"))); // NOI18N
         lbCriarEleicao.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbCriarEleicaoMouseClicked(evt);
             }
         });
         getContentPane().add(lbCriarEleicao);
-        lbCriarEleicao.setBounds(650, 450, 38, 38);
+        lbCriarEleicao.setBounds(650, 450, 40, 40);
 
         lbCargosCadastrados.setFont(new java.awt.Font("Montserrat SemiBold", 0, 14)); // NOI18N
         lbCargosCadastrados.setForeground(new java.awt.Color(255, 255, 255));
@@ -110,11 +110,11 @@ public class CadastrarEleicao extends javax.swing.JFrame {
         getContentPane().add(lbCargosCadastrados);
         lbCargosCadastrados.setBounds(360, 250, 190, 40);
 
-        lbAdicionarCargo1.setFont(new java.awt.Font("Montserrat SemiBold", 0, 14)); // NOI18N
-        lbAdicionarCargo1.setForeground(new java.awt.Color(255, 255, 255));
-        lbAdicionarCargo1.setText("CRIAR ELEIÇÃO");
-        getContentPane().add(lbAdicionarCargo1);
-        lbAdicionarCargo1.setBounds(700, 450, 150, 40);
+        lbCriarEleicaoNome.setFont(new java.awt.Font("Montserrat SemiBold", 0, 14)); // NOI18N
+        lbCriarEleicaoNome.setForeground(new java.awt.Color(255, 255, 255));
+        lbCriarEleicaoNome.setText("CRIAR ELEIÇÃO");
+        getContentPane().add(lbCriarEleicaoNome);
+        lbCriarEleicaoNome.setBounds(700, 450, 150, 40);
 
         lbAdicionarCargo.setFont(new java.awt.Font("Montserrat SemiBold", 0, 14)); // NOI18N
         lbAdicionarCargo.setForeground(new java.awt.Color(255, 255, 255));
@@ -132,9 +132,9 @@ public class CadastrarEleicao extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(550, 240, 50, 50);
 
-        lbPlanodeFundo.setIcon(new javax.swing.ImageIcon("F:\\Projeto Urna Eletronica\\URNA CODIGO JAVA\\UrnaEletronica\\src\\icones\\Untitled-1.jpg")); // NOI18N
+        lbPlanodeFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/Untitled-1.jpg"))); // NOI18N
         getContentPane().add(lbPlanodeFundo);
-        lbPlanodeFundo.setBounds(0, -160, 1160, 820);
+        lbPlanodeFundo.setBounds(0, -30, 960, 570);
 
         setSize(new java.awt.Dimension(867, 544));
         setLocationRelativeTo(null);
@@ -149,7 +149,7 @@ public class CadastrarEleicao extends javax.swing.JFrame {
     }//GEN-LAST:event_lbVoltarAncestorAdded
 
     private void lbVoltarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbVoltarMouseClicked
-        new telaAdministrador().setVisible(true);        // TODO add your handling code here:
+        new telaAdministrador().setVisible(true);        
     }//GEN-LAST:event_lbVoltarMouseClicked
 
     private void lbCriarEleicaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbCriarEleicaoMouseClicked
@@ -193,9 +193,9 @@ public class CadastrarEleicao extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lbAddCargo;
     private javax.swing.JLabel lbAdicionarCargo;
-    private javax.swing.JLabel lbAdicionarCargo1;
     private javax.swing.JLabel lbCargosCadastrados;
     private javax.swing.JLabel lbCriarEleicao;
+    private javax.swing.JLabel lbCriarEleicaoNome;
     private javax.swing.JLabel lbDescricao;
     private javax.swing.JLabel lbEnderecoTela;
     private javax.swing.JLabel lbNomedaeleicao;
